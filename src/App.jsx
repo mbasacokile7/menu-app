@@ -20,13 +20,28 @@ const App = () => {
     categories.push(cat);
   });
 
+  // Filter Function: Filters the menuItems based on items with the same category
+  function filterCategory(category) {
+    if (category !== "all") {
+      // We do not use menuItems state value, because it changes.
+      // So we use the original data to filter out the categories
+      const newMenu = menu.filter((item) => {
+        return item.category === category;
+      });
+      console.log(newMenu);
+      setMenuItems(newMenu);
+    } else {
+      setMenuItems(menu);
+    }
+  }
+
   const [cats, setCats] = useState(categories);
 
   return (
     <main>
       <section className="menu">
         <Title />
-        <Categories cats={cats} />
+        <Categories cats={cats} filterCategory={filterCategory} />
         <Menu menuItems={menuItems}></Menu>
       </section>
     </main>
