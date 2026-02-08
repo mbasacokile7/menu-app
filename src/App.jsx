@@ -28,7 +28,6 @@ const App = () => {
       const newMenu = menu.filter((item) => {
         return item.category === category;
       });
-      console.log(newMenu);
       setMenuItems(newMenu);
     } else {
       setMenuItems(menu);
