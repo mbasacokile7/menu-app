@@ -1,6 +1,6 @@
 # Menu App
 
-![Menu UI](public/images/MENU_UI.png)
+![Menu UI](./MENU_UI.png)
 
 ## Description
 
@@ -66,7 +66,7 @@ npm run build
 
 ## Screenshot
 
-The UI screenshot is included above. Place a snapshot at `public/images/MENU_UI.png` (or update the path in this file).
+The UI screenshot is included above. Place a snapshot at `./MENU_UI.png` (project root) to display here, or update the path in this file to point to a different location.
 
 ## Future Enhancements
 
